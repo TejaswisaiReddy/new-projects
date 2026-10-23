@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="card">
+        <form class="search" id="search-form">
+            <label class="visually-hidden" for="city-input">City name</label>
+            <input id="city-input" type="search" placeholder="Enter city name" spellcheck="false" autocomplete="off" required>
+            <button type="submit" aria-label="Search weather">
+                <img src="images/search.png" alt="">
+            </button>
+        </form>
+
+        <p class="error" role="alert" aria-live="polite" hidden></p>
+
+        <section class="weather" aria-live="polite" hidden>
+            <img src="images/rain.png" class="weather-icon" alt="Weather conditions">
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
